@@ -2,7 +2,7 @@
     --primary:#007a70 ;
 }
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.8),rgb(0, 0, 0,0.7)),url("/Assets/images/house.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgb(0, 0, 0,0.7)),url("..//images/house.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
@@ -167,7 +167,7 @@ a {
         border-radius: 0px;
     }
     body {
-        background: linear-gradient(rgba(0, 0, 0, 0.8),rgb(0, 0, 0,0.7)),url("/Assets/images/house.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.8),rgb(0, 0, 0,0.7)),url("../images/house.png");
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Ubuntu', sans-serif;
@@ -221,7 +221,7 @@ a {
         color: white;
         background: var(--primary);
         border: 0;
-        padding: 10px 34.5%;
+        padding: 10px 33%;
         font-size: 13px;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
         margin: 0 5%;
@@ -271,7 +271,7 @@ a {
           background: var(--primary);
           border: 0;
           letter-spacing: 5px;
-          padding: 10px 35%;
+          padding: 10px 34%;
           font-size: 13px;
           margin: 0 5%;
       }
