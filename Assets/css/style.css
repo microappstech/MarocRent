@@ -270,8 +270,11 @@ nav.primary-navigation {
 
 
 @media only screen and (max-width: 820px) {
-header{
+  header{
   display: none;
+}
+*{
+  overflow-x: clip;
 }
 .second-section {
   padding: 0%;
@@ -319,6 +322,8 @@ header{
   footer .info-footer .social{
     margin: 11px 15%;
   }
-  
+  .firstrow .right .card a, .firstrow .left .card a {
+    width: 100%;
+  }
 
 }
