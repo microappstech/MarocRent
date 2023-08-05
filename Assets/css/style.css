@@ -114,19 +114,20 @@ nav.primary-navigation {
     overflow: none;
 }
 .search .input-search{
+  
     position: absolute;
     width: 40%;
     height: 3.5em;
-    top: 48%;
     left: calc((100% - 40%) / 2);
     border-radius: 6px;
     background: #9a9a9a80;
+    top: 48%;
     border: solid 1px rgb(0, 0, 0);
     padding: 6px;
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: #007574;
-    color: #ccc;
+    color: #ccc; 
     
 }
  .search .input-search:focus{
@@ -320,7 +321,9 @@ nav.primary-navigation {
 
   }
   footer .info-footer .social{
-    margin: 11px 15%;
+    margin: 11px 0;
+    display: flex;
+    justify-content: space-evenly;
   }
   .firstrow .right .card a, .firstrow .left .card a {
     width: 100%;
