@@ -1,0 +1,74 @@
+:root {
+    --primary2:#007a70 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-home{
+    height: 75px;
+    /*background-color: #ccc;*/
+    background: none;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1), inset 0 0 0 0 #f2f2f2;
+}
+.filter {
+    margin: 1% 2%;
+    height: 60px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1), inset 0 0 0 0 #f2f2f2;
+}
+.filter form{
+   display: flex;
+}
+.sign {
+    color: var(--primary2);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 2px;
+}
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    text-decoration: none;
+    color: var(--primary2);
+}
+.filter input{
+    margin: 0.5% 1%;
+    display: block;
+    height: 100%;
+    width: 19%;
+    padding:  0.6% 0.3%;
+    text-align: left;
+    color: #828282;
+    border-radius: 8px;
+    outline: none;
+    border: 0.1px solid var(--primary2);
+    background-color: transparent;
+
+}
+.filter .inputs{
+    margin: 0.5% 1%;
+    display: block;
+    height: 100%;
+    width: 19%;
+    padding:  0.2% 0.0%;
+    text-align: left;
+    color: #828282;
+    border-radius: 8px;
+    outline: none;
+    border: 0.1px solid var(--primary2);
+    background-color: transparent;
+
+}
+.filter .inputs input{
+    margin: 0px;
+    height: 30px;
+}
+.searchbtn{
+    color: #fff;
+    background: var(--primary2);
+    margin: 0.5% 1%;
+}
