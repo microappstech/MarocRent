@@ -65,10 +65,51 @@ a {
 }
 .filter .inputs input{
     margin: 0px;
-    height: 30px;
+    height: 33px;
+}
+.filter form input[type=date]{
+    height: 45px;
+    height: 40px;
 }
 .searchbtn{
     color: #fff;
     background: var(--primary2);
     margin: 0.5% 1%;
+}
+.filterIcon{
+    display: none;
+}
+@media only screen and (max-width: 820px){
+    .nav-home{
+        background-color: #f2f2f2;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.1), inset 0 0 0 0 #f2f2f2;
+        height: inherit;
+    }   
+    .filter{
+         height: inherit;
+        display: none;
+    }
+    
+    .filterIcon{
+        display: block;
+        width: 4rem;
+        margin : 1rem   3rem;
+        border: 0.2px solid  var(--primary2);
+        border-radius: 6px;
+        padding: 4px;
+        text-align: center;
+    }
+    .filter form{
+        display: flex;
+        flex-direction: column;
+    }
+    .filter .inputs{
+        width: 96%;
+        padding: 5px 0;
+    }
+    .filter input{
+        width: calc(96%);
+        padding: 10px;
+        margin: 2%;
+    }
 }

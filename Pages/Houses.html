@@ -48,19 +48,24 @@
         </div>
       </nav>          
   </header>
-  <div class="filter">
+  <div class="filterIcon">
+    Filter
+  </div>
+  <div id="filter" class="filter">
     <form action="post">
         <input type="text" name="city" placeholder="Ville"  id="incity">
         <div class="inputs d-flex justify-content-around">
+            <span class="spane pt-1">
+              Price :
+            </span>
             <input type="number" name="inpriceMin" placeholder="Min" style="display:inline; width:5rem; padding: 0px 10px;">
             <input type="number" name="inpriceMax" placeholder="Max" style="display:inline; width:5rem; padding: 0px 10px;">
         </div>
-        <input number="text"  name="insatart" id="insatart" placeholder="Date début">
-        <input type="text" name="infin" id="infin" placeholder="Date fin">
+        <input type="date"  name="insatart" id="insatart" placeholder="Date début">
+        <input type="date" name="infin" id="infin" placeholder="Date fin">
         <button class="btn my-2 px-5 searchbtn" type="submit">Search</button>
     </form>
   </div>
-<br><br>
   <div class="d-flex justify-content-around flex-wrap" style="float: left;">
     <a style="text-decoration: none; color:#1c1c1c;" href="">
         <div class="card" style="width: 20rem;">
