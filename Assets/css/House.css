@@ -193,3 +193,6 @@ padding-right: 1%;
     font-weight: bolder;
     color: var(--primary2);
 }
+.aboutAppart{
+    width: 70%;
+}
