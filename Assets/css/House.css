@@ -76,13 +76,13 @@ body{
     display: flex;
 }
 
-.hedearMain .demandCard .sendMsg{
+.hedearMain .demandCard .sendMsg , .demandCardFixed .sendMsg{
     background-color: transparent;
     color: var(--primary2);
     border: 1px solid var(--primary2);
     margin-bottom: 10px;
 }
-.hedearMain .demandCard button{
+.hedearMain .demandCard button , .demandCardFixed button{
     display: flex;
     text-align: center;
     border-radius: 5px;
@@ -98,16 +98,25 @@ body{
     border: none;
     flex-direction: row;
 }
-.hedearMain .demandCard{
+.hedearMain .demandCard {
     width: 30%;
     border: 1px solid var(--primary2);
     text-align: center;
     position: absolute;
     right: 0;
+    background-color: #f8f9fa;
 }
-.hedearMain .demandCard h3{
+.hedearMain .demandCard h3, .demandCardFixed h3{
     margin: 20px;
     padding: 20px;
+}
+.hedearMain .demandCardFixed {
+    width: 30%;
+    border: 1px solid var(--primary2);
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 5rem;
 }
 .whatsapp{
 
@@ -195,4 +204,8 @@ padding-right: 1%;
 }
 .aboutAppart{
     width: 70%;
+}
+.aboutAppart p{
+    font-size: 24px;
+    font-weight: 300;
 }
