@@ -209,3 +209,64 @@ padding-right: 1%;
     font-size: 24px;
     font-weight: 300;
 }
+@media only screen and (max-width: 820px){
+    nav.navbar{
+        display: none;
+    }
+    .main, .mainimgs{
+        width: 100%;
+    }
+    .main .mainimgs img{
+        width: 100%;
+    }
+    .mainimgs {
+        display: block;
+    }
+    .mainimg, .secondimg{
+        width: 100%;
+        margin: auto;
+    }
+    .secondimg{
+        display: none;
+    }
+    
+    .maintext .hedearMain .header .title,.maintext .hedearMain .header{
+        display: block;
+    }
+    .mainCardsReview, .aboutAppart{
+        display: block;
+        width: 100%;
+    }
+    .maintext .header{
+        justify-content: space-between;
+        margin-right: 1%;
+        width: 100%;
+    }
+    .maintext .header .title h1{
+        font-size: 1.6rem;
+    }
+    .mainCardsReview .cardReview{
+        width: 99%;
+        border: 1px solid var(--primary2);
+        border-radius: 5px;
+        margin-bottom: 3%;
+    
+    }
+    .hedearMain{display: block;}
+
+
+    .hedearMain .demandCard {
+        width: 100%;
+        border: 1px solid var(--primary2);
+        text-align: center;
+        position: unset;
+        background-color: #f8f9fa;
+        margin: 30px 0;
+    }
+
+    .demandCard{
+        display: block;
+        position: unset;
+        width: 100%;
+    }
+}
