@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarocRent | New Rent Posts</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="../Admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../Admin/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../Assets/css/AddPost.css">
+</head>
+<body class="hold-transition sidebar-collapse">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Create new Rent Post </h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Create Post Rent</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    
+    <section class="content">
+      <div class="card">
+        <div class="card-body row">
+          <div class="col-6 text-center d-flex justify-content-center">
+            <div class="">
+                <h2 class="title text-secondary font-">Appartement a casablanca boulvard Anfa</h2>
+                <div class="imgs d-flex">
+                  <img src="../Assets/images/download.png" alt="">
+                  <img src="../Assets/images/download.png" alt="">
+                  <img src="../Assets/images/download.png" alt="">
+                  <img src="../Assets/images/download.png" alt="">
+                </div>
+                <div class="d-flex center justify-content-center d-none" >
+                    <span class="precedent">&lt;</span>
+                    <img class="m-1" src="../Assets/images/Houses/eatingroom.jpg" width="150px" alt="" srcset="">
+                    <img class="m-1" src="../Assets/images/Houses/eatingroom.jpg" width="150px" alt="" srcset="">
+                    <img class="m-1 " src="../Assets/images/Houses/eatingroom.jpg" width="150px" alt="" srcset="">
+                    <img class="m-1 d-none" src="../Assets/images/Houses/eatingroom.jpg" width="150px" alt="" srcset="">
+                  <span class="next">&gt;</span>  
+                </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="inputName">Titre</label>
+              <input type="text" id="inputName" placeholder="Titre de votre loyer" class="form-control" />
+            </div>
+            <div class="form-group py-1"  style="border: 1px solid rgba(195, 195, 195, 0.758);">
+              <label class="file-input-label" for="filesInput">Select a main image</label>
+                <input type="file" name="moreimgs" id="filesInput" class="form-control d-none" multiple>
+            </div>
+            <div class="form-group py-1" style="border: 1px solid rgba(195, 195, 195, 0.758);">
+              <label class="file-input-label" for="filesInput">Select More Images</label>
+                <!-- <label for="otherPng">More Images</label> -->
+                <input type="file" name="moreimgs" id="filesInput" class="form-control d-none" multiple>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Adress</label>
+              <input type="text" placeholder="Adresse de votre loyer" id="inputEmail" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="inputSubject">Ville</label>
+              <input type="text" id="inputSubject" placeholder="Vile de votre loyer" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Description</label>
+              <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group d-flex ">
+              <label for="inputMessage" class="col-3">Type de contrat</label>
+              <div class="d-flex col-9 justify-content-arround">
+                <div class="input-group mx-1">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><input id="rent" name="type" type="radio"></span>
+                    </div>
+                    <label type="text" for="rent"  class="form-control bg-light">Loyer mensuel</label>
+                </div>
+                <div class="input-group mx-1">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><input id="rentdaily" name="type" type="radio"></span>
+                    </div>
+                    <label type="text" for="rentdaily"  class="form-control bg-light">Loyer journée</label>
+                </div>
+                <div class="input-group mx-1">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><input id="vente" name="type" type="radio"></span>
+                    </div>
+                    <label type="text" for="vente"  class="form-control bg-light">Vente</label>
+                </div>
+                
+            </div>
+
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Price</label>
+              <input id="inputMessage" type="number" placeholder="Prix pour jour / Prix pour mois" class="form-control" rows="4"></input>
+            </div>
+            <div class="form-group d-none">
+              <label for="inputMessage">Description</label>
+              <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group d-none">
+              <label for="inputMessage">Description</label>
+              <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group d-none">
+              <label for="inputMessage">Description</label>
+              <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary px-5 mx-auto" value="Submit">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+</div>
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+        Created By
+      <b>Hamza Mouddakir</b>
+    </div>
+    <strong>Copyright &copy; 2023 <a href="http://Hamza-mouddakir.tech">Hamza Dev</a>.</strong> All rights reserved.
+  </footer>
+
+</div>
+<script src="../Admin/plugins/jquery/jquery.min.js"></script>
+<script src="../Admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../Admin/dist/js/adminlte.min.js"></script>
+<script src="../Admin/dist/js/demo.js"></script>
+<script src="../Assets/Admin/Dashboard.js"></script>
+</body>
+</html>
