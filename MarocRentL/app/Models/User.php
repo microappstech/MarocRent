@@ -17,8 +17,12 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $primaryKey ="userId";
+    protected $incrementing = true;
     protected $fillable = [
         'name',
+        'username',
+        'userType',
         'email',
         'password',
     ];
@@ -42,4 +46,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function rents(){
+        $this->hasMany(Rents::class);
+    }
+
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
 }

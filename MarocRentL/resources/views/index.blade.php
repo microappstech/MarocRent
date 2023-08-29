@@ -23,8 +23,8 @@
     </head>
     <body class="antialiased">
         <div id="mainbanner" style="background-image: url('./Assets/images/house.png')">
-            @include('Components.navbar')
-            {{-- {!! view('../navbar')} --}}
+            @include('navbar')
+            
             <div class="overly"></div>
             <div class="search">
                 <div class="citation">
