@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    puvlic function __construct(){
+        
+    }
     public function index(){
         return "<h1>index</h1>";
     }
