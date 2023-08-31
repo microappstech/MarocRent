@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    puvlic function __construct(){
+    public function __construct(){
         
     }
     public function index(){
