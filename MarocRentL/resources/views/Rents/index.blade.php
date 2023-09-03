@@ -19,35 +19,43 @@
 @section("content")
 <div class="body" style="margin-top:100px ">
     <div class="filterIcon">
-        Filter
+        <button class="bg-warning border-warning p-2 rounded">Filter</button>
     </div>
     <div id="filter" class="filter">
-    <div class="closeIcon">X</div>
-    <form action="post">
-        <input type="text" name="city" placeholder="Ville"  id="incity">
+    <div class="closeIcon bg-warning border-warning text-white rounded">X</div>
+    <form action="post" class="form-group">
+        <input type="text" name="city" placeholder="Ville"  class="border border-light"  id="incity">
         <div class="inputs d-flex justify-content-around">
             <span class="spane pt-1">
                 Price :
             </span>
-            <input type="number" name="inpriceMin" placeholder="Min" style="display:inline; width:5rem; padding: 0px 10px;">
-            <input type="number" name="inpriceMax" placeholder="Max" style="display:inline; width:5rem; padding: 0px 10px;">
+            <input type="number" name="inpriceMin" placeholder="Min" class="border border-secondary" style="display:inline; width:5rem; padding: 0px 10px;">
+            <input type="number" name="inpriceMax" placeholder="Max" class="border border-secondary" style="display:inline; width:5rem; padding: 0px 10px;">
         </div>
-        <input type="date"  name="insatart" id="insatart" placeholder="Date début">
-        <input type="date" name="infin" id="infin" placeholder="Date fin">
-        <button class="btn my-2 px-5 searchbtn" type="submit">Search</button>
+        <input type="date"  name="insatart" id="insatart" class="border border-secondary" placeholder="Date début">
+        <input type="date" name="infin" id="infin" class="border border-secondary" placeholder="Date fin">
+        <button class="btn btn-warning text-white my-2 px-5 searchbtn" type="submit">Search</button>
     </form>
     </div>
+    <a href="{{route('CreateRent')}}" class="btn btn-success">Create New</a>
     <div class="d-flex justify-content-around flex-wrap" style="float: left;">
+        {{-- @if(count($rents)>0) --}}
+        @foreach($rents as $rent)
         <a style="text-decoration: none; color:#1c1c1c;" href="">
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="../Assets/images/Houses/medium.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{$rent->MainImage}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">el oualfa haj fateh</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><strong class="text-success">{{round((float)$rent->price,2)}} $</strong></p>
+                    <h5 class="card-title">{{$rent->title}}</h5>
+                    <p class="card-text">{{$rent->description}}</p>
+                    <p class="card-text"><small class="text-muted">{{$rent->updated_at}}</small></p>
                 </div>
             </div>
         </a>
-        <a style="text-decoration: none; color: #1c1c1c;" href="">
+        @endforeach
+        {{-- @else --}}
+        {{-- @endif --}}
+         <a style="text-decoration: none; color: #1c1c1c;" href="">
             <div class="card my-2" style="width: 20rem;">
             <img class="card-img-top" src="../Assets/images/Houses/flat.webp" alt="Card image cap">
             <div class="card-body">

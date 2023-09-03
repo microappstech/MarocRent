@@ -4,20 +4,22 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Rents extends Model
 {
-    use HasFactory;
+    use HasFactory , Notifiable;
+    public $incrementing  = true;
 
     protected $primaryKey ="RentId";
-    protected $incrementing  = true;
     protected $fillable = [
         "title",
         "adresse",
         "description",
         "price",
         "daily",
-        "monthly"
+        "monthly",
+        "MainImage"
     ];
 
     public function user(){
