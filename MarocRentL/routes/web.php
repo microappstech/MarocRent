@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminRentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
@@ -12,6 +13,8 @@ Route::get("/Rents", [RentController::class, "index"])->name("AllRents");
 Route::get("/Rents/Create", [RentController::class, "Create"])->name("CreateRent");
 Route::post("/Rents/Post", [RentController::class, "Store"])->name("StoreRent");
 Route::get("/Posts",[PostController::class, "index"])->name("AllPosts");
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', function () {return view('index');});
+
+
+///   ADMIN
+Route::get('/Admin/ListRents' ,[AdminRentController::class , "Index"])->name("Admin.ListRents");

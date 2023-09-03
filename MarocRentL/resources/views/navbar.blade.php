@@ -34,7 +34,7 @@
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
-            <a href="./Auth/Login.html" class="sign" align="center">Sign up / Sign in</a>
+            <a href="{{route('Admin.ListRents')}}" class="sign" align="center">Sign up / Sign in</a>
           </div>
         </div>
       </nav>          
